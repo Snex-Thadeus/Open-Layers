@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.1.0/ol.css">
+    <script src="https://cdn.jsdelivr.net/npm/ol@v7.1.0/dist/ol.js"></script>
+    <title>OpenLayers Example</title>
+  </head>
+  <body>
+    <div class="grid-container">
+        <div class="grid-1">
+            <div class="sidebar">
+                <h2>Base Layers</h2>
+                <input type="radio" name="baseLayerRadioButton" value="OSMStandard" checked>OSM Standard <br>
+                <input type="radio" name="baseLayerRadioButton" value="OSMHumanitarian">OSM Humanitarian <br>
+                <input type="radio" name="baseLayerRadioButton" value="StamenTerrain">Stamen Terrain <br>
+
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div id="js-map" class="map"></div>
+        </div>
+    </div>
+    <div class="overlay-container">
+        <span class="overlay-text" id="feature-name"></span><bbr></bbr>
+        <span class="overlay-text" id="feature-addtional-info"></span><bbr></bbr>
+
+    </div>
+
+    <!-- <h2>My OpenLayers Map</h2>    -->
+    <script src="./main.js"></script>
+  </body>
+</html>
